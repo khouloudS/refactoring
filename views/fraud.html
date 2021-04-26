@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+	{% block content %}
+		<div id="content">
+		<!-- Contenu : début-->
+					<h2>Le lien d'affiliation par lequel vous arrivez ici a été désactivé.</h2>
+
+					<p>Pour voir la page de présentation de [NOM DU PRODUIT PRINCIPAL], <a href="{{parth(index.php?e=}}">cliquez ici</a>.</p>
+					<p>L'affilié en question ne recevra aucune commission.</p>
+
+		<p>&nbsp;</p>
+
+					<hr />
+
+					<p class="align">Une question ? Un commentaire ? Contactez-nous à : <a href="{{parth(mailto:VotreAdresse@Email.com}}">VotreAdresse@Email.com</a></p>
+		<!-- Contenu : fin -->
+		</div>
+		
+	{% endblock %}

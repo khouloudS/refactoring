@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+	{% block content %}
+		<div id="content">
+<!-- Contenu : début -->
+			<h2>Identifiant de transaction invalide.</h2>
+
+          <p>Désolé, mais cet identifiant de transaction n'existe pas.</p>
+          <p>Si vous pensez qu'il s'agit d'une erreur, veuillez nous contacter à : <a href="{{parth(mailto:VotreAdresse@Email.com}}">VotreAdresse@Email.com</a></p>
+      <p><u><b>IMPORTANT</b></u> : Veuillez inclure dans votre message <b>l'adresse email avec laquelle vous avez effectué l'achat</b>.</p>
+
+      <p>&nbsp;</p>
+
+          <hr>
+
+      <p class="align">Une question ? Un commentaire ? Contactez-nous à : <a href="{{parth(mailto:VotreAdresse@Email.com}}">VotreAdresse@Email.com</a></p>
+
+<!-- Contenu : fin -->
+		</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+	{% block content %}
+		<div id="content">
+<!-- Contenu : début-->
+
+<h2>Commande non validée</h2>
+
+			<p><b>Toutes nos excuses pour le désagrément. Nous ne pouvons pas valider votre commande pour l'instant</b>.</p>
+			<p>Il y a plusieurs raisons qui peuvent expliquer cela. Entre autres :</p>
+
+			<ul><li>Vous avez payé avec un e-check. Si c'est le cas, la transaction sur votre compte PayPal sera indiquée : <b>Status : En attente</b> ou <b>Non compensé</b>.<br />Le lien de téléchargement du produit vous sera envoyé automatiquement après validation du virement (en général sous 3 à 5 jours).<br /><br /></li>
+			<li>Votre compte PayPal a un solde nul et la carte bancaire rattachée a expirée ou son numéro n'est pas valide. Vérifiez-le en vous connectant maintenant à votre compte PayPal.<br /><br /></li>
+			<li>Si la transaction sur votre compte PayPal est indiquée : <b>Status : Non récupéré</b>, le paiement a été fait à un affilié (et non à nous, vendeurs du produit, - ce qui est normal, la commission d'affiliation étant payée directement aux affiliés).<br />Dans ce cas, contactez l'affilié à l'adresse email qui figure sur le reçu PayPal de la transaction et demandez-lui de récupérer le paiement. Il est possible que l'adresse email qu'il a utilisé ne soit pas associée à son compte PayPal ou qu'elle soit non confirmée (demandez-lui de vérifier ces points).<br />Le lien de téléchargement du produit vous sera envoyé automatiquement quand l'opération aura été effectuée par l'affilié.<br /><br /></li>
+			<li>Il est possible que PayPal soit lent à retourner les données de transaction à notre site. <br />Vous recevrez un email contenant le lien de téléchargement du produit quand ces donnés parviendront à notre gestionnaire de vente. <br />
+			Pour voir si les données sont parvenues à notre site, <a href="{{parth(index.php?action=squeeze}}">cliquez ici</a> (attendez environ 15 minutes après commande avant de le faire).</li></ul>
+      <p>Dans tous les cas, n'hésitez pas à nous contacter à : <a href="{{parth(mailto:VotreAdresse@Email.com}}">VotreAdresse@Email.com</a> Veuillez inclure dans votre message <b>l'adresse email avec laquelle vous avez effectué l'achat</b>.</p>
+
+	  <p>&nbsp;</p>
+
+<hr>
+
+
+<!-- Contenu : fin -->
+		</div>
+	</body>
+</html>
+{% endblock %}

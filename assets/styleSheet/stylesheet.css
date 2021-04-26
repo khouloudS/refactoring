@@ -1,0 +1,33 @@
+body, p, td {
+	font-size: 16px;
+	font-family: Verdana,Arial,Helvetica,Sans-Serif;
+}
+
+body {
+	background-color: #36648B;
+}
+
+#content {
+	border: 2px groove silver;
+	background-color: white;
+	width: 690px;
+	margin: 20px auto;
+	padding: 30px;
+}
+
+.align {
+    align-content:center;
+}
+
+.tableSale
+{
+	width:450px;
+	 height:200px;
+	border: 4px dashed black;
+}
+
+.imgBut {
+	border :0;
+	width :160;
+	height :52;
+}

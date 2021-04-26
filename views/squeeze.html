@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+	{% block content %}
+		<div id="content">
+<!-- Contenu : début -->
+			<h2>Merci pour votre commande !</h2>
+
+      <p>[Indiquez ici une <i><b>raison solide</b></i> pour inciter vos clients à s'abonner à votre liste email.<br>
+      <b>L'inscription DOIT être facultative : vous ne devez PAS supprimer le lien ci-dessous</b>.]</p>
+
+      <p>[INSEREZ VOTRE FORMULAIRE D'AUTOREPONDEUR ICI]</p>
+
+	  <p class="font">Vos données personnelles sont en sécurité. Elle ne seront ni vendues, ni échangées.</p>
+
+	  <p>&nbsp;</p>
+	  
+<!-- Lien pour aller à la page de téléchargement du produit principal ; NE PAS CHANGER LE LIEN -->
+			<p class="align"><a href="{{parth(index.php?action=download)}}">Je ne souhaite pas m'inscrire.<br />
+      Envoyez-moi sur la page de téléchargement.</a></p>
+<!-- Lien pour aller directement à la page de téléchargement du produit principal : fin -->
+
+      <p>&nbsp;</p>
+			<hr />
+
+			<p class="align">Une question ? Un commentaire ? Contactez-nous à : <a href="{{parth(mailto:VotreAdresse@Email.com}}">VotreAdresse@Email.com</a></p>
+<!-- Contenu : fin -->
+		</div>
+		{% endblock %}

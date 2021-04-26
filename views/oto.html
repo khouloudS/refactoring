@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+	{% block content %}
+		<div id="content">
+<!-- Contenu : début -->
+			<h2>Attention ! Offre Spéciale...</h2>
+
+			<p><font color=#cc0000><b>Cette offre spéciale ne vous sera faite QU'UNE FOIS, alors lisez cette page très attentivement...</b></font></p>
+
+			<p>[PLACEZ ICI LA LETTRE DE VENTE DE VOTRE OFFRE SPECIALE UNIQUE / ONE-TIME-OFFER]</p>
+
+<!-- Lien de commande de l'OTO ; NE PAS CHANGER LE LIEN -->
+<p><b>Pour recevoir [NOM DU PRODUIT DE L'OTO] pour seulement [PRIX] €, <a href="{{parth(index.php?action=order&amp;oto=1}}">cliquez ici</a></b></p>	
+<!-- Lien de commande de l'OTO : fin-->
+
+<p>&nbsp;</p>
+
+			<p>Si vous ne souhaitez pas profiter de cette opportunité, cliquez sur le lien ci-dessous. <b>Mais souvenez-vous</b> : vous n'aurez pas une autre possibilité de vous procurer ce produit à ce prix-ci...</p>
+			
+<!-- Lien pour aller à la page de téléchargement du produit principal ; NE PAS CHANGER LE LIEN -->
+			<p class="align"><a href="{{parth(index.php?action=download&amp;dl=1}}">Non merci.<br />
+			Envoyez-moi juste sur la page de téléchargement.</a></p>
+<!-- Lien pour aller directement à la page de téléchargement du produit principal : fin -->
+
+<p>&nbsp;</p>
+
+			<hr />
+
+			<p class="align">Une question ? Un commentaire ? Contactez-nous à : <a href="{{parth(mailto:VotreAdresse@Email.com}}">VotreAdresse@Email.com</a></p>
+<!-- Contenu : fin -->
+		</div>
+{% endblock %}

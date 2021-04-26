@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+	{% block content %}
+		<div id="content">
+<!-- Contenu : début -->
+
+<p class="align"><font size="6"><b>Placez votre accroche ici</b></font></p>
+
+<p>&nbsp;</p>
+
+<p>[PLACEZ ICI LA LETTRE DE VENTE DU PRODUIT PRINCIPAL]</p>
+
+<p>&nbsp;</p>
+
+<table class="align">
+<tr>
+<td>
+<table class="tableSale">
+<tr>
+<td class="align" vclass="align">
+<p class="align"><font size="4"><b>Commandez De Suite Votre Exemplaire Pour Seulement</b></font><br />
+<b><font size="6">7 €</font></b></p>
+
+<!-- Lien d'achat : début ; NE PAS CHANGER LE LIEN ; vous pouvez changer l'image ou la remplacer par un lien textuel -->
+<p class="align"><a href="{{parth(index.php?action=order)}}"><img src="{{parth(images/x-click-but5.gif}}" class="imgBut"></a><br />
+<!-- Lien d'achat : fin-->
+
+<p class="align"><i><font size="2">Paiement sécurisé par PayPal</font></i></p>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<p><b>P.S.</b> : </p>
+
+<p>&nbsp;</p>
+
+<hr>
+      
+<p class="align">Une question ? Un commentaire ? Contactez-nous à : <a href="{{parth(mailto:VotreAdresse@Email.com}}">VotreAdresse@Email.com</a></p>
+
+
+<!-- Contenu : fin -->
+		</div>
+		{% endblock %}
