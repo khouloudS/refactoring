@@ -7,6 +7,7 @@ class Transaction extends System
 
   public function __construct()
   {
+    
   }
   public function __construct($id, $status, $oto)
   {

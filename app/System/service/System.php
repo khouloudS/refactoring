@@ -2,7 +2,15 @@
 
 class System implements ISystem
 {
-        
+    public function __construct()
+    {
+        $this->checkFile(pathname);
+        $this->checkFile("ipn.txt");
+        $this->checkFile("fraud.txt");
+        $this->checkFile("tellafriend.txt");
+        $this->checkFile("uniq.txt");
+        $this->checkFile("unsubs.txt");
+    }   
     public function showTemplate($filename) {
         $filename = $_ENV['sys_template_folder'] . $filename;
         include($filename);
@@ -149,5 +157,4 @@ class System implements ISystem
     }
     
 }
-
 ?>

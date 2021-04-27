@@ -6,12 +6,7 @@ $sys_version = "2.9";
 $salesServices = new SaleService; 
 $system = new System;
 
-$system->checkFile("index.html");
-$system->checkFile("ipn.txt");
-$system->checkFile("fraud.txt");
-$system->checkFile("tellafriend.txt");
-$system->checkFile("uniq.txt");
-$system->checkFile("unsubs.txt");
+
 
 
 
