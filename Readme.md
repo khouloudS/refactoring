@@ -39,34 +39,43 @@ The original project has been divided into a clear structure using the necessary
 						└───views
 
 
-##### 1. app folder
+### 1. app folder
 
 In this folder, the project has been divided into modules: Sale, System, Transaction and User.
  
-**System** implements the global functionnalities.
-**Sale** module is designed to implement all sales functionnalities for this application.
+**System** implements the global functionalities.
+
+**Sale** module is designed to implement all sales functionalities for this application.
+
 **Transaction** module implements all the transaction related routines.
+
 **User** module is created for scalability purposes: In case users will be added to the application. Also,the Admin class inherits from the User class.
+
 **Utils** contains the environment variable declarations as well as all the routines calling html components.
+
 **config** stores the provided configuration files.
 
 Usually, under each module we have a set of three folders (except for System) for the following purposes:
-	**model** contains the object class definition (depending on the module in question: Sale, Transcation or User).
-	**interface** is used to list functions related to the object.
-	**services** contains the actual implementation of functions previously defined in the corresponding interface subfolder.
+
+   **model** contains the object class definition (depending on the module in question: Sale, Transcation or User).
+
+   **interface** is used to list functions related to the object.
+ 
+   **services** contains the actual implementation of functions previously defined in the corresponding interface subfolder.
 
 
-##### 2. assets folder
-In this folder we list all the syte files. To do so, we add two main subfolders:
+### 2. assets folder
+In this folder we list all the style files. To do so, we add two main subfolders:
 
 **bootstrap** where the twig template locations are specified and our twig is instantiated.
+
 **stylesheet** contains the CSS files.
 
-##### 3. vendor folder:
+### 3. vendor folder:
 
-Contains the twig autloader.
+Contains the twig autoloader.
 
-##### 4. views folder:
+### 4. views folder:
 
 Contains the html files including **layout.html** where all the html skeletons have been defined.
 
